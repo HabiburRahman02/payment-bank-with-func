@@ -29,15 +29,16 @@
                     <div class="divider"></div>
 
                     <div class="flex justify-center">
-                        <div>
+                        <div class="grid grid-cols-3 gap-4">
                             <button class="btn btn-lg bg-sky-500 text-white" id="btn-show-add-money">Add Money</button>
                             <button class="btn btn-lg  bg-pink-500 text-white" id="btn-show-cash-out">Cash Out</button>
+                            <button class="btn btn-lg  bg-green-500 text-white" id="btn-trans">Transactions</button>
                         </div>
                     </div>
                     <div class="divider"></div>
 
                     <!-- add money -->
-                    <form id="add-money-form" class="hidden card-body w-full">
+                    <form id="add-money-form" class=" card-body w-full">
                         <div class="form-control">
                             <label class="label">
                                 <span class="label-text">Amount Add Money</span>
@@ -58,7 +59,7 @@
                     </form>
 
                     <!-- cash out -->
-                    <form id="cash-out-form" class=" card-body w-full">
+                    <form id="cash-out-form" class="hidden card-body w-full">
                         <div class="form-control">
                             <label class="label">
                                 <span class="label-text">Amount Cash Out</span>
@@ -77,6 +78,12 @@
                             <button id="btn-cash-out" class="btn btn-primary btn-lg">Cash Out</button>
                         </div>
                     </form>
+
+                    <!-- trans start -->
+                    <div id="trans-section" class="hidden">
+                        <h2 class="text-3xl text-center text-pink-500">Transactions History</h2>
+                    </div>
+                    <!-- trans end -->
                 </div>
 
             </div>
@@ -85,6 +92,7 @@
     <script src="js/utilities.js"></script>
     <script src="js/addMoney.js"></script>
     <script src="js/cashOut.js"></script>
+    <script src="js/features.js"></script>
 </body>
 
 </html>

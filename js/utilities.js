@@ -10,3 +10,12 @@ function getTextFieldValueById(id) {
     const textFieldValue = parseFloat(textFieldValueStr);
     return textFieldValue;
 }
+
+function showSectionById(id){
+    document.getElementById('add-money-form').classList.add('hidden')
+    document.getElementById('cash-out-form').classList.add('hidden')
+    document.getElementById('trans-section').classList.add('hidden')
+
+    // remove hidden class
+    document.getElementById(id).classList.remove('hidden')
+}
