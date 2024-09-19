@@ -1,5 +1,6 @@
 
-function getInputFieldValueById(id){
-    const inputValue = document.getElementById(id).value;
+function getInputFieldValueById(id) {
+    const inputValueStr = document.getElementById(id).value;
+    const inputValue = parseFloat(inputValueStr);
     return inputValue;
 }
