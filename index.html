@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our awesome bank</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="flex mt-12 justify-center items-center">
+    <div class="mockup-phone">
+        <div class="camera"></div>
+        <div class="display">
+            <div class="artboard artboard-demo phone-3 bg-gray-200 ">
+
+                <div class=" w-full">
+                    <!-- available balance -->
+                    <div class="flex justify-center">
+                        <div class="stats shadow rounded-lg bg-teal-500 text-white">
+                            <div class="stat ">
+                                <div class="stat-value">$<span id="prev-balance">200</span></div>
+                                <div class="stat-desc text-white text-2xl">Available Balance</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="divider"></div>
+
+                    <div class="flex justify-center">
+                        <div>
+                            <button class="btn btn-lg bg-sky-500 text-white" id="btn-show-add-money">Add Money</button>
+                            <button class="btn btn-lg  bg-pink-500 text-white" id="btn-show-cash-out">Cash Out</button>
+                        </div>
+                    </div>
+                    <div class="divider"></div>
+
+                    <!-- add money -->
+                    <form id="add-money-form" class=" card-body w-full">
+                        <div class="form-control">
+                            <label class="label">
+                                <span class="label-text">Amount Add Money</span>
+                            </label>
+                            <input id="field-new-amount" type="number" placeholder="Enter amount"
+                                class="input input-bordered" required />
+                        </div>
+                        <div class="form-control">
+                            <label class="label">
+                                <span class="label-text">Pin</span>
+                            </label>
+                            <input id="field-pin-number" type="text" placeholder="Type 1234"
+                                class="input input-bordered" required />
+                        </div>
+                        <div class="form-control mt-6">
+                            <button id="btn-add-money" class="btn btn-primary">Add Money</button>
+                        </div>
+                    </form>
+
+                    <!-- cash out -->
+                    <form id="cash-out-form" class="hidden card-body w-full">
+                        <div class="form-control">
+                            <label class="label">
+                                <span class="label-text">Amount Cash Out</span>
+                            </label>
+                            <input id="field-cash-out-amount" type="number" placeholder="Enter amount"
+                                class="input input-bordered" required />
+                        </div>
+                        <div class="form-control">
+                            <label class="label">
+                                <span class="label-text">Pin</span>
+                            </label>
+                            <input id="field-cash-out-pin" type="text" placeholder="Type 1234"
+                                class="input input-bordered" required />
+                        </div>
+                        <div class="form-control mt-6">
+                            <button id="btn-cash-out" class="btn btn-primary">Cash Out</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="js/utilities.js"></script>
+    <script src="js/addMoney.js"></script>
+</body>
+
+</html>
