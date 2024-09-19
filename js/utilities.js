@@ -4,3 +4,9 @@ function getInputFieldValueById(id) {
     const inputValue = parseFloat(inputValueStr);
     return inputValue;
 }
+
+function getTextFieldValueById(id) {
+    const textFieldValueStr = document.getElementById(id).innerText;
+    const textFieldValue = parseFloat(textFieldValueStr);
+    return textFieldValue;
+}
